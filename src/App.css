@@ -28,6 +28,22 @@
   color: #61dafb;
 }
 
+.country-row {
+  display: flex;
+}
+
+.country-row div {
+  margin-left: 2rem;
+  text-align: left;
+}
+
+.country-row .short {
+  width: 10%;
+}
+.country-row .wider {
+  width: 30%;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
