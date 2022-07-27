@@ -4,6 +4,7 @@ import Countries from './views/Countries';
 
 function App() {
   const [countries, setCountries] = useState([])
+  const [filter, setFilter] = useState("AN")
 
   async function loadCountries() {
     const options = {
@@ -35,6 +36,8 @@ function App() {
   }, [])
   return (
     <div className="App">
+      <input value={filter} onChange={(event)=> {setFilter(event.target.value)}} />
+      <button>Search</button>
       <Countries countries={countries} continent="Antartica" />
     </div>
   );
